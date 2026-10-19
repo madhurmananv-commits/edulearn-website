@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4f46e5">
+  <title>EduLearn — Learn Today, Build Tomorrow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EduLearn home"><span class="brand-mark">✦</span> EduLearn</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#courses">Courses</a><a href="#notes">Notes</a><a href="#videos">Videos</a>
+    </nav>
+    <a class="button button-small" href="#about">About</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR LEARNING SPACE</p>
+        <h1>Learn Today,<br><span>Build Tomorrow.</span></h1>
+        <p class="hero-text">Simple, organised learning resources to help you understand concepts and study at your own pace.</p>
+        <div class="hero-actions"><a class="button" href="#courses">Explore courses <span>→</span></a><a class="button button-light" href="#notes">Browse notes</a></div>
+        <div class="hero-stats"><div><strong>6</strong><span>Starter courses</span></div><div><strong>5</strong><span>Study notes</span></div><div><strong>Anytime</strong><span>Learn at your pace</span></div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="book book-back"></div><div class="book book-mid"></div><div class="book book-front"></div>
+        <div class="cap"><div class="cap-top"></div><div class="cap-base"></div><div class="cap-tassel"></div></div>
+        <div class="laptop"><div class="laptop-screen"><span>Learn</span><i></i><i></i><i></i></div><div class="laptop-base"></div></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT TOPIC</p><h2>Explore courses</h2><p class="muted">A small starter library across popular subjects.</p></div><span class="count-pill" id="courseCount">6 courses</span></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="courseSearch" type="search" placeholder="Search courses..."></label><select id="courseCategory" aria-label="Filter courses"><option value="All">All subjects</option><option>Programming</option><option>Computer Science</option><option>Mathematics</option><option>Web Development</option></select></div>
+      <div class="course-grid" id="courseGrid"></div>
+      <p class="empty-state hidden" id="courseEmpty">No courses match your search. Try another keyword.</p>
+    </section>
+
+    <section class="section notes-section" id="notes">
+      <div class="section-heading"><div><p class="eyebrow">REVISION MADE SIMPLE</p><h2>Study notes</h2><p class="muted">Quick revision sheets you can read or download.</p></div></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="noteSearch" type="search" placeholder="Search notes..."></label></div>
+      <div class="notes-list" id="notesList"></div>
+      <p class="empty-state hidden" id="notesEmpty">No notes found.</p>
+    </section>
+
+    <section class="section videos-section" id="videos">
+      <div class="section-heading"><div><p class="eyebrow">WATCH & UNDERSTAND</p><h2>Video lectures</h2><p class="muted">Hand-picked introductory videos from YouTube.</p></div></div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><p class="eyebrow">ABOUT EDULEARN</p><h2>One place to keep learning.</h2><p>EduLearn is a basic educational website demo. It uses static sample content, so it works without a database or backend. You can edit the course list and notes directly in <code>script.js</code>.</p></div>
+      <div class="about-card"><span class="about-icon">✦</span><h3>Learn at your pace</h3><p>Browse a topic, revise the essentials, and keep moving forward.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">✦</span> EduLearn</a><span>Made for curious learners.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
